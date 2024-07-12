@@ -15,9 +15,9 @@ def user_auth_connection() -> Session:
     Connect with snowpark by using user authentication
     '''
     connection_param = {
-        'ACCOUNT': 'NJVFEBY-GF37563',
-        'USER': 'harishsingh',
-        'PASSWORD': 'Password@1',
+        'ACCOUNT': '<account>',
+        'USER': '<user>',
+        'PASSWORD': '<password>',
         #[OPTIONAL]
         'ROLE': 'SYSADMIN',
         'WAREHOUSE': 'COMPUTE_WH',
@@ -58,8 +58,8 @@ def rsa_auth_connection() -> Session:
         encryption_algorithm=serialization.NoEncryption())
 
     connection_param = {
-        'ACCOUNT': 'NJVFEBY-GF37563',
-        'USER': 'harishsingh',
+        'ACCOUNT': '<account>',
+        'USER': '<user>',
         'PRIVATE_KEY': pkb,
         #[OPTIONAL]
         'ROLE': 'SYSADMIN',
